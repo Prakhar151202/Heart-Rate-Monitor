@@ -8,5 +8,6 @@ public class HeartRateMonitorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HeartRateMonitorApplication.class, args);
+
 	}
 }
