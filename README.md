@@ -1,3 +1,51 @@
+# Heart Rate Monitor API
+
+## **About the Project**
+
+This project provides a simple implementation of APIs to manage **Users** (medical staff) and **Patients**. The application focuses on basic operations such as user registration, login, and patient management, while intentionally avoiding complex authentication and authorization protocols for simplicity. The primary objective is to enable medical staff to manage patient data and heart rate information.
+
+### **Key Highlights**
+- **Entities**:
+  The project includes two main entities:
+  1. **Users**: Represents medical staff such as doctors, nurses, consultants, etc.
+  2. **Patients**: Represents patients whose data, including heart rate, is managed by the APIs.
+
+- **Workflow**:
+  - A user must first register with the system by providing the required fields.
+  - After successful registration, the user logs in using their credentials.
+  - Once logged in, users can perform operations such as:
+    - Adding new patients.
+    - Retrieving all patients.
+    - Fetching the heart rate of a specific patient.
+    - Updating a patient's heart rate.
+
+- **Database**:
+  The project uses an **H2 in-memory database** to avoid the need for external database installation, making it lightweight and easy to use during development.
+
+## **APIs Included in the Project**
+
+The following API endpoints are implemented in the project:
+
+### **1. Register a New User**
+This API allows users (e.g., doctors, nurses, etc.) to register themselves for the first time by providing their email and password.
+- **Endpoint**: `POST /api/user/registerUser`
+- **Request Body**:
+  ```json
+  {
+    "email": "user@example.com",
+    "password": "password123"
+  }
+
+
+
+
+
+
+
+
+
+
+
 ABOUT THE PROJECT :
 
 - I have used only 2 entities USERS AND PATIENTS, to keep the things simple and focused on the required APIs. I have assumed user can be any medical staff (doctor, nurse, consultant etc). First time, a user need to register himself using the required fields. 
@@ -24,7 +72,16 @@ APIs included in project :
 
   <img width="1008" alt="Screenshot 2025-01-10 at 3 50 18 PM" src="https://github.com/user-attachments/assets/29654230-5d75-4f1d-b74c-8a6b0404d867" />
    
+4. Find all the Patients that has been added
 
+   <img width="1007" alt="Screenshot 2025-01-10 at 3 54 19 PM" src="https://github.com/user-attachments/assets/8e26db3b-96a7-4356-9949-8b006666de43" />
+
+5. Find the Heartrate of the patient using patientId
+
+   <img width="993" alt="Screenshot 2025-01-10 at 3 56 00 PM" src="https://github.com/user-attachments/assets/57ddce62-27e2-436d-9f4b-9e73e281fa35" />
+
+6. Record the new heartrate of a patient
+
+   <img width="1008" alt="Screenshot 2025-01-10 at 3 58 27 PM" src="https://github.com/user-attachments/assets/829ea2e3-8048-41e4-82de-639b085beab5" />
    
-
 
