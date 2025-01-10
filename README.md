@@ -107,30 +107,6 @@ This API allows users (e.g., doctors, nurses, etc.) to record new heartrate of t
 <p align="center"><img width="993" alt="Screenshot 2025-01-10 at 3 58 27 PM" src="https://github.com/user-attachments/assets/829ea2e3-8048-41e4-82de-639b085beab5" /></p>
 
 
-APIs included in project :
-
-1. Register User For The First Time
-   <img width="993" alt="Register User" src="https://github.com/user-attachments/assets/eafe0b87-6047-45f8-bbd8-9224ba4eebd3" />
-
-
-2. Login User and test for validation
-
-   <img width="1001" alt="Screenshot 2025-01-10 at 3 49 32 PM" src="https://github.com/user-attachments/assets/693ff963-8dfc-4645-83dd-c0dffe5d5d58" />
-
-3. Add new Patient to the database
-
-  <img width="1008" alt="Screenshot 2025-01-10 at 3 50 18 PM" src="https://github.com/user-attachments/assets/29654230-5d75-4f1d-b74c-8a6b0404d867" />
-   
-4. Find all the Patients that has been added
-
-   <img width="1007" alt="Screenshot 2025-01-10 at 3 54 19 PM" src="https://github.com/user-attachments/assets/8e26db3b-96a7-4356-9949-8b006666de43" />
-
-5. Find the Heartrate of the patient using patientId
-
-   <img width="993" alt="Screenshot 2025-01-10 at 3 56 00 PM" src="https://github.com/user-attachments/assets/57ddce62-27e2-436d-9f4b-9e73e281fa35" />
-
-6. Record the new heartrate of a patient
-
    <img width="1008" alt="Screenshot 2025-01-10 at 3 58 27 PM" src="https://github.com/user-attachments/assets/829ea2e3-8048-41e4-82de-639b085beab5" />
    
 
