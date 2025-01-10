@@ -22,41 +22,38 @@ This project provides a simple implementation of APIs to manage **Users** (medic
 - **Database**:
   The project uses an **H2 in-memory database** to avoid the need for external database installation, making it lightweight and easy to use during development.
 
+    <img width="691" alt="Screenshot 2025-01-10 at 4 31 41 PM" src="https://github.com/user-attachments/assets/373fa612-895f-480e-9843-766aa8bb6629" />
+
+<img width="766" alt="Screenshot 2025-01-10 at 4 32 30 PM" src="https://github.com/user-attachments/assets/eb230561-a025-43c2-8629-ceed469ff970" />
+
 ## **APIs Included in the Project**
 
 The following API endpoints are implemented in the project:
 
 ### **1. Register a New User**
-This API allows users (e.g., doctors, nurses, etc.) to register themselves for the first time by providing their email and password.
+This API allows users (e.g., doctors, nurses, etc.) to register themselves for the first time by providing their details, email and password.
 - **Endpoint**: `POST /api/user/registerUser`
 - **Request Body**:
   ```json
   {
-    "email": "user@example.com",
-    "password": "password123"
+    "name": "Ayesha Sharma",
+    "age": "32",
+    "staff": "Doctor",
+    "department": "Neurology",
+    "email": "ayesha.sharma@example.com",
+    "password": "securepass321"
   }
 
 
-
-
-
-
-
-
-
-
-
-ABOUT THE PROJECT :
-
-- I have used only 2 entities USERS AND PATIENTS, to keep the things simple and focused on the required APIs. I have assumed user can be any medical staff (doctor, nurse, consultant etc). First time, a user need to register himself using the required fields. 
-
-- Post that, a user need to login himself/herself and then they can add patient, find all patient, find the heartrate or record the heartrate. However, here, I have not used any authentication or authorisation protocols as it was not required.
-
-Database, I have used is H2-console to avoid any unnecessary installations of database.
-
-<img width="691" alt="Screenshot 2025-01-10 at 4 31 41 PM" src="https://github.com/user-attachments/assets/373fa612-895f-480e-9843-766aa8bb6629" />
-
-<img width="766" alt="Screenshot 2025-01-10 at 4 32 30 PM" src="https://github.com/user-attachments/assets/eb230561-a025-43c2-8629-ceed469ff970" />
+### **2. Login a User**
+This API allows users (e.g., doctors, nurses, etc.) to login themselves for the first time by providing their email and password.
+- **Endpoint**: `POST /api/user/login`
+- **Request Body**:
+  ```json
+  {
+    "email": "ayesha.sharma@example.com",
+    "password": "securepass321"
+  }
 
 APIs included in project :
 
