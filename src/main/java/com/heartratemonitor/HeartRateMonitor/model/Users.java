@@ -1,11 +1,15 @@
 package com.heartratemonitor.HeartRateMonitor.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Getter@Setter
 public class Users{
 
     @Id
@@ -15,4 +19,12 @@ public class Users{
     private String age;
     private String staff;
     private String department;
+    @NotBlank(message = "Email is required")
+    @Email(message = "Email should be valid")
+    @Column(unique = true)
+    private String email;
+    @NotBlank(message = "Password is required")
+    private String password;
+
+
 }
