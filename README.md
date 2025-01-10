@@ -1,0 +1,1 @@
+I have used only 2 entities to keep the things simple and focused on the required APIs. I have assumed user can be any medical staff (doctor, nurse, consultant etc). First time, a user need to register himself using the required fields. 
