@@ -22,9 +22,13 @@ This project provides a simple implementation of APIs to manage **Users** (medic
 - **Database**:
   The project uses an **H2 in-memory database** to avoid the need for external database installation, making it lightweight and easy to use during development.
 
-    <img width="691" alt="Screenshot 2025-01-10 at 4 31 41 PM" src="https://github.com/user-attachments/assets/373fa612-895f-480e-9843-766aa8bb6629" />
+  <p align="center">
+  <img width="993" alt="Screenshot 2025-01-10 at 4 31 41 PM" src="https://github.com/user-attachments/assets/373fa612-895f-480e-9843-766aa8bb6629" />
+</p>
 
-<img width="766" alt="Screenshot 2025-01-10 at 4 32 30 PM" src="https://github.com/user-attachments/assets/eb230561-a025-43c2-8629-ceed469ff970" />
+<p align="center">
+  <img width="993" alt="Screenshot 2025-01-10 at 4 32 30 PM" src="https://github.com/user-attachments/assets/eb230561-a025-43c2-8629-ceed469ff970" />
+</p>
 
 ## **APIs Included in the Project**
 
@@ -43,17 +47,65 @@ This API allows users (e.g., doctors, nurses, etc.) to register themselves for t
     "email": "ayesha.sharma@example.com",
     "password": "securepass321"
   }
-
+  
+<p align="center"> <img width="993" alt="Register User" src="https://github.com/user-attachments/assets/eafe0b87-6047-45f8-bbd8-9224ba4eebd3" /> </p>
 
 ### **2. Login a User**
 This API allows users (e.g., doctors, nurses, etc.) to login themselves for the first time by providing their email and password.
 - **Endpoint**: `POST /api/user/login`
 - **Request Body**:
   ```json
+  
   {
     "email": "ayesha.sharma@example.com",
     "password": "securepass321"
   }
+<p align="center"> <img width="993" alt="Login User" src="https://github.com/user-attachments/assets/693ff963-8dfc-4645-83dd-c0dffe5d5d58" /> </p>
+
+### **3. Add a new Patient**
+This API allows users (e.g., doctors, nurses, etc.) to add the patient to the database after recording all the information in the fields.
+- **Endpoint**: `POST /api/patient/addPatient`
+- **Request Body**:
+  ```json
+  
+  {
+        "patientName": "Emily Davis",
+        "age": "26",
+        "gender": "Female",
+        "contact": "9876543213",
+        "heartRate": 75
+  }
+<p align="center"> <img width="993" alt="Add New Patient" src="https://github.com/user-attachments/assets/29654230-5d75-4f1d-b74c-8a6b0404d867" /> </p>
+
+### **4. Find all the Patient in record**
+This API allows users (e.g., doctors, nurses, etc.) to find all the patients.
+- **Endpoint**: `GET /api/patient/allPatient`
+- **Request Body**:
+  ```json
+
+<p align="center"> <img width="993" alt="Retrieve All Patients" src="https://github.com/user-attachments/assets/8e26db3b-96a7-4356-9949-8b006666de43" /> </p>
+
+### **5. Find Heartrate of a Patient using PatientId**
+This API allows users (e.g., doctors, nurses, etc.) to find heartrate of their patient.
+- **Endpoint**: `GET /api/patient/heartrate/{patiendId}`
+- **Request Body**:
+  ```json
+
+<p align="center"> <img width="993" alt="Retrieve Heart Rate" src="https://github.com/user-attachments/assets/57ddce62-27e2-436d-9f4b-9e73e281fa35" /> </p>
+
+### **6. Record new heartrate of a Patient**
+This API allows users (e.g., doctors, nurses, etc.) to record new heartrate of their patient.
+- **Endpoint**: `PUT /api/patient/heartrate/{patientId}`
+- **Request Body**:
+  ```json
+
+  {
+    "patientId": 2,
+    "patientName": "Daniel Lee",
+    "heartRate": new-heart-rate
+  }
+<p align="center"><img width="993" alt="Screenshot 2025-01-10 at 3 58 27 PM" src="https://github.com/user-attachments/assets/829ea2e3-8048-41e4-82de-639b085beab5" /></p>
+
 
 APIs included in project :
 
